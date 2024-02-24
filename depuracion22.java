@@ -18,22 +18,22 @@ public class depuracion22 {
         do {
             // Comprobamos si el numero es menor
             // que el actual menor
-            if (menor < numeroUsuario) {
+            if (menor > numeroUsuario) {
                 menor = numeroUsuario;
             }
             // Comprobamos si el numero es mayor
             // que el actual mayor
-            if (mayor > numeroUsuario) {
+            if (mayor < numeroUsuario) {
                 mayor = numeroUsuario;
             }
             // Suma el numero y lo acumulamos
-            suma = numeroUsuario;
+            suma = numeroUsuario+suma;
             // Si el numero es positivo, suma a la variable de los positivos
             // y sino a la de los negativos
             if (numeroUsuario >= 0) {
-                sumaPositivos = numeroUsuario;
+                sumaPositivos = numeroUsuario + sumaPositivos;
             } else {
-                sumaNegativos = numeroUsuario;
+                sumaNegativos = numeroUsuario + sumaNegativos;
             }
             // aumento el contador
             contador++;
